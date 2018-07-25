@@ -7,7 +7,7 @@ class Hello extends Component {
   render () {
     // Make sure to return some UI
     return (
-      <h1>Hello World!</h1>
+      <h1>Hello {this.props.name}!</h1>{/*reference to that data via as a property on the props object*/}
     )
   }
 }

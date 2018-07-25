@@ -5,6 +5,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <Hello name={"Nick"} />,
+  <Hello name={"Nick"} />{/*pass in data*/},
   document.getElementById('root'));
 )
