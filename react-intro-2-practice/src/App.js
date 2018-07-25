@@ -8,7 +8,10 @@ class Hello extends Component {
     // Make sure to return some UI
     /*{this.props.name}reference to that data via as a property on the props object*/
     return (
-      <h1>Hello {this.props.name}!</h1>
+      <div>
+        <h1>Hello {this.props.name}</h1>
+        <p>You are {this.props.age} years old</p>
+      </div>
     )
   }
 }
