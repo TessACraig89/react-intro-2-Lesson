@@ -7,12 +7,19 @@ class Hello extends Component {
   // our constructor function is called
   // what should the component render
   constructor (props) {
-    // make call to parent class' (Component) constructor
+    // must always call super before any other statment in constructor otherwise this.props will be undefined
     super()
     // define an initial state
     this.state = {
       counter: 0 // initialize this.state.counter to be 0
     }
+  }
+  //trigger event 
+  handleClick (e) {
+    // setState is inherited from the Component class
+    this.setState({
+      counter: this.state.counter + 1
+    })
   }
   render () {
     // Make sure to return some UI
