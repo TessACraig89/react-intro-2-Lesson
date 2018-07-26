@@ -16,7 +16,7 @@ class Hello extends Component {
   }
   //trigger event
   handleClick (e) {
-    // setState is inherited from the Component class
+    // when setState is run our component does a "diff", comparing the virtual DOM node with an updated state to the current DOM
     this.setState({
       counter: this.state.counter + 1
     })
